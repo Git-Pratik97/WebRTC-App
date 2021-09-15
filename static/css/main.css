@@ -2,17 +2,21 @@
 {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	background-color: black;
+	background-color: blue;
 }
 
 .main-grid-container
 {
 	display: grid;
-	grid-template-columns: 60% 20%;
+	grid-template-columns: 60%;
 } 
 
 video
 {
-	border-radius: 25%;
-	background-color: black;
+	border-radius: 30%;
+	background-color: black; 	
 }
+
+
+
+

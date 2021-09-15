@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-1)adsw@=b46)vj6r+gy7jen^jl-9^5j052@rsrpxf0r%^4g3(t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'c054-103-58-155-103.ngrok.io', '80', '50830'] #['127.0.0.1','94ca-203-194-104-74.ngrok.io','localhost']
 
 
 # Application definition
@@ -135,6 +135,15 @@ CHANNEL_LAYERS = {
         "BACKEND": "channels.layers.InMemoryChannelLayer"
     }
 }
+
+#CHANNEL_LAYERS = {
+#    "default": {
+#        "BACKEND": "channels_redis.core.RedisChannelLayer",
+#        "CONFIG": {
+#            "hosts": [("127.0.0.1", 6379)],
+#        },
+#    },
+#}
 
 
 
